@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>CEPédia</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+    <header>
+        <h1>CEPédia</h1>
+        <h2>Conheça o Brasil pelo Código de Endereçamento Postal!</h2>
+
+        <hr style="width: 100%; border: 2px solid #112b9c;">
+    </header>
+
+    <main>
+        <section>
+            <input type="text" class="cep" id="cep" maxlength="9" oninput="formatCEP(this)" onblur="pesquisaCEP(this.value)" placeholder="Informe o CEP">
+
+            <span id="spnErro" class="erro"></span> <!-- Exibe a mensagem de erro para validação dos campos -->
+            <h1><spam id="spnMensagem"></spam></h1>
+        </section>
+
+        <section class="resultados-cep" id="resultados-cep">
+
+            <div class="gemini" id="gemini">
+                <!-- Exibe a mensagem de acesso ao Gemini -->
+            </div>
+
+            <div class="item-resultado">
+                <div class="inputBox">
+                    <span><b>Logradouro:</b></span>
+                    <input type="text" required="required" id="rua">
+                </div>
+                <div class="inputBox">
+                    <span><b>Bairro:</b></span>
+                    <input type="text" required="required" id="bairro">
+                </div>
+                <div class="inputBox">
+                    <span><b>Cidade:</b></span>
+                    <input type="text" required="required" id="cidade">
+                </div>
+                <div class="inputBox">
+                    <span><b>Estado:</b></span>
+                    <input type="text" required="required" id="uf">
+                </div>
+                <button id="btnPesquisar">Pesquisar</button>
+            </div>
+
+            <div class="maps" id="maps">
+                <!-- Exibe a mensagem de acesso ao Maps -->
+            </div>
+
+        </section>
+
+        <section class="resultados-pesquisa" id="resultados-pesquisa">
+            <!-- Exibe as informações referentes ao estado pesquisado -->
+        </section>
+
+    </main>
+    <footer>
+        <p>© 2024 - Daniel Breitschaft - <a href="https://cursos.alura.com.br/imersao" target="_blank">Imersão DEV</a></p>
+    </footer>
+    <script src="dados.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
