@@ -1,6 +1,7 @@
 # CEPédia: Seu Guia Completo de CEPs
 
 ![Screenshot](https://github.com/user-attachments/assets/a3bb1192-af53-4e56-ab44-1bc758926b7d)
+Acesse por este link para testá-lo: [https://cepedia.vercel.app/]
 
 ## Descrição
 
